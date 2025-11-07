@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Digital - Sebastião Maciel - Perícia Contábil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // SUBSTITUA ESTE ID (G-XXXXXXXXXX) PELO SEU ID DE MEDIÇÃO REAL DO GA4
+      gtag('config', 'G-XXXXXXXXXX'); 
+    </script>
+</head>
+<body>
+    <main>
+        <section class="card-section visible">
+            <div class="card-container">
+                <header class="card-header">
+                    <div class="profile-photo-wrapper">
+                        <img src="sebastiao.jpg" alt="Foto de Sebastião Maciel" class="profile-photo">
+                    </div>
+                </header>
+                <div class="card-body">
+                    <h1>Sebastião Maciel</h1> 
+                    <p class="role">CÁLCULOS TRABALHISTAS</p> 
+                    <div class="contact-buttons">
+                        <a href="#" id="email-btn" class="contact-btn" data-type="EMAIL_FORM">
+                            <i class="fas fa-envelope"></i> Fale por E-mail
+                        </a>
+                        <a href="https://wa.me/55988138280?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Sr.%20Sebastião." target="_blank" class="contact-btn" data-type="WHATSAPP">
+                            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                        </a>
+                        <a href="" class="contact-btn" data-type="site">
+                            <i class="fas fa-briefcase"></i> Portifólio
+                        </a>
+                        <a href="https://maps.app.goo.gl/HjyMpahp5h8rkDd87" target="_blank" class="contact-btn" data-type="LOCALIZACAO">
+                            <i class="fas fa-map-marker-alt"></i> Ver Localização
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section hidden">
+            <div class="contact-form-container">
+                <a href="#" id="back-btn" class="back-to-card-btn"><i class="fas fa-arrow-left"></i> Voltar</a>
+                
+                <h2>Fale comigo</h2>
+                <form action="https://formspree.io/f/meopojpr" method="POST" class="contact-form" id="meuFormulario"> 
+                    <div class="form-group"><label for="name">Nome Completo:</label><input type="text" id="name" name="name" required placeholder="Seu nome"></div>
+                    <div class="form-group"><label for="phone">Seu Telefone:</label><input type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX"></div>
+                    <div class="form-group"><label for="email">Seu Email:</label><input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com"></div>
+                    <div class="form-group"><label for="subject">Assunto:</label><input type="text" id="subject" name="subject" required placeholder="Orçamento, Dúvida, Suporte, etc."></div>
+                    <div class="form-group"><label for="message">Mensagem:</label><textarea id="message" name="message" rows="5" required placeholder="Detalhe sua necessidade aqui..."></textarea></div>
+                    
+                    <button type="submit" id="submit-btn">Enviar Mensagem</button> 
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="card-footer">
+        <p>Clique nos botões para interagir.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
